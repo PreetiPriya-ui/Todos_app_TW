@@ -1,6 +1,7 @@
 import React from 'react';
 import CreateTask from './CreateTask';
 import TaskList from './TaskList';
+import './style.css';
 
 const tasks = localStorage.getItem('tasks')
   ? JSON.parse(localStorage.getItem('tasks'))
@@ -41,7 +42,7 @@ export default class Main extends React.Component {
   render() {
     return (
       <div className="main">
-        <h1>Todos</h1>
+        <h1 className="heading">Todos</h1>
         <div className="content">
           <CreateTask createTask={this.createTask} />
           <br />

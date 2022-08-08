@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import TaskItem from './TaskItem';
+import './style.css';
 
 export default class TaskList extends Component {
   render() {
     return (
-      <table>
+      <table class="to_do"> 
         <thead>
           <tr>
             <th>Task</th>
